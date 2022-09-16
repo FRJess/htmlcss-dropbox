@@ -1,0 +1,91 @@
+/* GENERAL */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+  padding: 160px, 460px;
+  text-align: center;
+}
+
+.debug{
+  border: 1px solid black;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* HEADER */
+
+header{
+  z-index: 999;
+  /* position: fixed; */
+  display: flex;
+  height: 80px;
+  width: 100%;
+}
+
+/* JUMBOTRON */
+
+.container{
+  width: 100%;
+  display: flex;
+  height: 735px ;
+}
+
+.jumbotron{
+  height: 100%;
+}
+
+.jumbotron.text{
+  width: 30%;
+  margin-left: 100px;
+}
+
+.jumbotron.img{
+  width: 70%;
+  margin-right: 100px;
+}
+
+/* CARDS */
+
+.container-2{
+  max-width: 1200px;
+  display: inline-block;
+}
+
+.feature{
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+}
+
+.box1,.box2{
+  margin-right: 48px;
+}
+
+.row{
+  width: 100%;
+}
+
+.row-2{
+  width: 100%;
+  margin: 0 auto;
+}
+
+section .container-2{
+  display: flex;
+}
+
+section .container-2 .image{
+  width: 60%;
+}
+
+section .container-2 .text{
+  width: 40%;
+}
