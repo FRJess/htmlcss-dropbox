@@ -234,13 +234,14 @@ input[type="radio"]{
 
 .row-2{
   margin: 50px 0;
+  width: 100%;
   max-width: 1000px;
   font-size: 0.9rem;
   display: flex;
 }
 
 .feature-2{
-  width: 100%;
+  /* max-width: 100%; */
   text-align: left;
   justify-content: center;
   border: 1px solid black;
@@ -259,7 +260,7 @@ line-height: normal;
 padding-top: 50px;
 }
 
-/* section .container-2 .image{
+section .container-2 .image{
   width: 60%;
   float:left;
 }
@@ -267,7 +268,12 @@ padding-top: 50px;
 section .container-2 .text{
   width: 40%;
   float: right;
-} */
+}
+
+.container-2 img{
+  max-width: 600px;
+}
+
 
 .col{
   float: left;
@@ -283,9 +289,6 @@ section .container-2 .text{
   margin: 50px 20px;
 }
 
-/* img{
-  max-width: 300px;
-} */
 
 .element-text{
   text-align: left;
