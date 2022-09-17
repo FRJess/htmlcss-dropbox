@@ -22,6 +22,7 @@ h2{
 
 h4 {
   font-size: 20px;
+  padding-bottom: 20px;
 }
 
 h6{
@@ -40,6 +41,8 @@ h6{
   padding: 10px 15px;
   font-size: .8rem;
   text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .btn.colored{
@@ -51,12 +54,6 @@ h6{
 .btn.colored.big{
   width: 220px;
   justify-content: center;
-}
-
-.container{
-  width: 100%;
-  /* display: flex; */
-  /* margin: 50px 0; */
 }
 
 ul{
@@ -145,13 +142,13 @@ header .menu ul li{
 
 /* CARDS */
 
-.container-2{
+.container{
   max-width: 100%;
   display: inline-block;
   margin: 140px;
 }
 
-.container-2 h2{
+.container h2{
   text-align: left;
   padding: 20px 0;
 }
@@ -178,14 +175,6 @@ input[type="radio"]{
   padding-right: 25px;
 }
 
-.feature-2{
-  text-align: left;
-  padding-left: 25px;
-  justify-content: center;
-  line-height: 30px;
-  border: 1px solid black;
-}
-
 .box1,.box2{
   margin-right: 48px;
 }
@@ -197,14 +186,14 @@ input[type="radio"]{
   display: flex;
 }
 
-.feature .type{
+.feature .type,.feature-2 .type{
   border-bottom: 1px solid black;
   text-align: center;
   line-height: 36px;
   margin-bottom: 36px;
 }
 
-.feature .prezzo{
+.prezzo{
   font-weight: 600;
 }
 
@@ -243,10 +232,6 @@ input[type="radio"]{
   color: #0055FF;
 }
 
-.feature a::after{
-
-}
-
 .row-2{
   margin: 50px 0;
   max-width: 1000px;
@@ -254,7 +239,27 @@ input[type="radio"]{
   display: flex;
 }
 
-section .container-2 .image{
+.feature-2{
+  width: 100%;
+  text-align: left;
+  justify-content: center;
+  border: 1px solid black;
+  padding-bottom: 30px;
+}
+
+.box4{
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+.feature-body .description{
+margin-right: 350px;
+line-height: normal;
+padding-top: 50px;
+}
+
+/* section .container-2 .image{
   width: 60%;
   float:left;
 }
@@ -262,7 +267,7 @@ section .container-2 .image{
 section .container-2 .text{
   width: 40%;
   float: right;
-}
+} */
 
 .col{
   float: left;
