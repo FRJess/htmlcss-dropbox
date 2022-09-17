@@ -197,8 +197,8 @@ input[type="radio"]{
   margin-right: 5px;
 }
 
-.feature ul{
-  margin-top: 50px;
+.fa-ul{
+  margin-left: 1rem;
 }
 
 .feature li{
@@ -206,38 +206,23 @@ input[type="radio"]{
   margin:20px 0px;
 }
 
-.feature .user.single::before{
+.feature .single::before{
 font-family: 'Font Awesome\ 5 Free';
 content:"\f007";
 margin-right: 5px;
 }
 
-.feature .space::before{
+.feature .team::before{
   font-family: 'Font Awesome\ 5 Free';
-  content:"\f07b";
+  content:"\f0c0";
   margin-right: 5px;
-}
-
-.feature .share::before{
-  font-family: 'Font Awesome\ 5 Free';
-  content:"\f1e0";
-  margin-right: 5px;
-}
-
-.feature .type::before{
-font-family: 'Font Awesome\ 5 Free';
-content:"\f007";
-margin-right: 5px;
-}
+  }
 
 .feature .btn{
   margin: 20px 0;
 }
 
-.feature .check::before{
-  font-family: 'Font Awesome\ 5 Free';
-  content:"\f00c";
-  margin-right: 5px;
+.feature .fa-check{
   color: #0055FF;
 }
 
