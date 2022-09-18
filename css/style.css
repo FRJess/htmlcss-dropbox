@@ -14,6 +14,9 @@ main{
   padding-top: 80px;
   text-align: center;
   background-color: white;
+  width: auto;
+  /* max-width: 2000px; */
+  position:relative;
 }
 
 h2{
@@ -27,6 +30,12 @@ h4 {
 
 h6{
   font-size: 14px;
+}
+
+p{
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: normal;
 }
 
 .clearfix::after{
@@ -43,6 +52,7 @@ h6{
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
+  border: 1px solid black;
 }
 
 .btn.colored{
@@ -100,20 +110,23 @@ header .menu ul li{
 
 .jumbotron{
   background-color: #B4D0E7;
-  height:735px; /*da togliere*/
+  height:605px; /*da togliere*/
+  display: inline-block;
   width: 100%;
+  max-width: 100%;
 }
 
 .title{
   font-size: 3rem;
   text-align: left;
-  padding: 100px 300px 46px 300px;
+  padding: 100px 400px 46px 300px;
 }
 
 .jumbotron .content{
   display: flex;
   padding-left: 300px;
-  position:absolute
+  position:absolute;
+  width: 100%;
 }
 
 .jumbotron .content .text{
@@ -131,21 +144,25 @@ header .menu ul li{
   margin-bottom: 20px;
 }
 
-.proposta{
+.jumbotron .content .img{
   width: 70%;
   margin-right: 300px;
   float:right;
   position: relative;
-  top:40px;
   left:0;
+}
+
+.jumbotron .content .img .proposta{
+  height: 465px;
+  padding-bottom: 40px;
 }
 
 /* CARDS */
 
 .container{
-  max-width: 100%;
+  width: 60%;
   display: inline-block;
-  margin: 140px;
+  margin: 140px auto;
 }
 
 .container h2{
@@ -155,19 +172,27 @@ header .menu ul li{
 
 .select{
   text-align: left;
-  margin: 20px
+  margin: 20px 0;
 }
 
 input[type="radio"]{
   margin: 0 10px 0 10px;
 }
+.row{
+  margin: 0 auto;
+  font-size: 0.9rem;
+  display: flex;
+  float: left;
+  max-width: 1000px;
+}
 
 .feature{
-  width: 270px;
+  width: (100%/3);
   justify-content: center;
   text-align: left;
   line-height: 30px;
   border: 1px solid black;
+  margin-bottom: 40px;
 }
 
 .feature-body{
@@ -177,13 +202,6 @@ input[type="radio"]{
 
 .box1,.box2{
   margin-right: 48px;
-}
-
-.row{
-  max-width: 1000px;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  display: flex;
 }
 
 .feature .type,.feature-2 .type{
@@ -233,15 +251,13 @@ input[type="radio"]{
 }
 
 .row-2{
-  margin: 50px 0;
   width: 100%;
-  max-width: 1000px;
   font-size: 0.9rem;
   display: flex;
+  max-width: 1000px;
 }
 
 .feature-2{
-  /* max-width: 100%; */
   text-align: left;
   justify-content: center;
   border: 1px solid black;
@@ -255,23 +271,35 @@ input[type="radio"]{
 }
 
 .feature-body .description{
-margin-right: 350px;
-line-height: normal;
-padding-top: 50px;
+  margin-right: 350px;
+  padding-top: 50px;
+}
+
+/* SECTION CARDS PART 2 */
+
+.container-2{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin: 40px auto;
 }
 
 section .container-2 .image{
   width: 60%;
   float:left;
+  text-align: left;
 }
 
 section .container-2 .text{
   width: 40%;
   float: right;
+  text-align: left;
+  padding:50px
 }
 
+
 .container-2 img{
-  max-width: 600px;
+  max-width: 500px;
 }
 
 
