@@ -75,6 +75,7 @@ p{
 
 ul{
   list-style: none;
+  font-weight: 300;
 }
 
 .debug{
