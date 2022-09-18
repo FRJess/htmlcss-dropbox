@@ -354,6 +354,78 @@ section .container-2 .text{
   padding: 50px 0;
 }
 
+.marchio{
+  width: 100%;
+}
+
+.row-marchio{
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.col-marchio{
+  /* float: left; */
+  width: calc(100%/3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-marchio.big{
+  justify-content: center;
+  align-items: center;
+}
+
+.card-marchio{
+  width: calc(100%/2);
+  display: inline-block;
+  height: 320px;
+  position: relative;
+  /* justify-content: center;
+  vertical-align: center; */
+  margin: auto;
+}
+
+.card-marchio.big{
+  justify-content: center;
+  background-color: #F5F5F5;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-marchio img{
+  filter: invert(100%);
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-marchio.big img{
+  filter: none;
+  width: 50%;
+
+}
+
+.card-marchio.design{
+  background-color: #A2D39B;
+}
+
+.card-marchio.asu{
+  background-color: #61082A;
+}
+
+.card-marchio.bicycle{
+  background-color: #D50020;
+}
+
+.card-marchio.hearst{
+  background-color: #B3D0E7;
+}
+
 /* FAQ */
 
 .faq{
