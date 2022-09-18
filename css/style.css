@@ -46,7 +46,7 @@ p{
 .btn{
   background-color: white;
   color: black;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   font-size: .8rem;
   text-decoration: none;
   text-align: center;
@@ -356,6 +356,7 @@ section .container-2 .text{
 
 .marchio{
   width: 100%;
+  margin-top: 150px;
 }
 
 .row-marchio{
@@ -392,7 +393,8 @@ section .container-2 .text{
   background-color: #F5F5F5;
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
+  position: relative;
 }
 
 .card-marchio img{
@@ -407,7 +409,16 @@ section .container-2 .text{
 .card-marchio.big img{
   filter: none;
   width: 50%;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
 
+.card-marchio.big p{
+position: absolute;
+bottom: 0;
+text-align: left;
+padding: 20px;
 }
 
 .card-marchio.design{
@@ -425,6 +436,48 @@ section .container-2 .text{
 .card-marchio.hearst{
   background-color: #B3D0E7;
 }
+
+.card-marchio.uff{
+  background-color: #0093CE;
+}
+
+.card-marchio.topps{
+  background-color: #FF1C1C;
+}
+
+.card-marchio.lonely{
+  background-color: #0D2581;
+}
+
+.card-marchio.clearchannel{
+  background-color: #FFD830;
+}
+
+.tryit{
+  background-color: #B4D0E7;
+}
+
+.tryit .content{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  padding: 125px;
+  justify-content: space-between;
+}
+
+.tryit .content h2{
+  color: #632336;
+  width: 50%;
+  text-align: left;
+}
+
+.tryit .content .btn{
+  border: none;
+  line-height: 10px;
+  height: 40px;
+  width: 300px;
+}
+
 
 /* FAQ */
 
