@@ -15,7 +15,6 @@ main{
   text-align: center;
   background-color: white;
   width: auto;
-  /* max-width: 2000px; */
   position:relative;
 }
 
@@ -114,6 +113,7 @@ header .menu ul li{
   display: inline-block;
   width: 100%;
   max-width: 100%;
+  margin-bottom: 140px;
 }
 
 .title{
@@ -155,14 +155,16 @@ header .menu ul li{
 .jumbotron .content .img .proposta{
   height: 465px;
   padding-bottom: 40px;
+
 }
 
 /* CARDS */
 
 .container{
   width: 60%;
+  max-width: 1200px;
   display: inline-block;
-  margin: 140px auto;
+  margin: 40px auto;
 }
 
 .container h2{
@@ -302,38 +304,87 @@ section .container-2 .text{
   max-width: 500px;
 }
 
+/* SECTION COLONNE */
+
+.row-3{
+  margin: 0;
+  font-size: 0.9rem;
+  display: flex;
+  float: left;
+  /* max-width: 1000px; */
+}
 
 .col{
   float: left;
   width: calc(100% / 3);
-  min-width: 344px;
-  padding:0 16px;
-  margin-bottom: 50px;
 }
 
 .card{
   display: inline-block;
-  height: 550px;
-  margin: 50px 20px;
+  height: 500px;
 }
 
+.col.one, .col.two{
+  margin-right: 48px;
+}
 
-.element-text{
+.card img{
+  max-height: 230px;
+  padding: 10px
+}
+
+.card .description{
+  text-align: left;
+  padding: 10px 0;
+}
+
+/* CUSTOMERS */
+
+.bottom{
+  margin: 40px 0;
+}
+
+.customers{
+  width: 60%;
+  margin: auto;
   text-align: left;
 }
+
+.customers h2{
+  padding: 50px 0;
+}
+
+/* FAQ */
+
+.faq{
+  width: 60%;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.faq h2{
+  margin-bottom: 20px;
+}
+
+.faq ul li{
+  padding: 25px 0;
+}
+
 
 /* FOOTER */
 
 footer{
-  background-color:aquamarine;
-  /* color: #EFF2FC; */
+  background-color: black;
+  color: #EFF2FC;
   padding-top: 60px;
   width: 100%;
 }
 
 .footer-menu{
+  width: 60%;
+  margin: auto;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding-bottom: 30px;
   border-bottom: 1px solid #323540;
 }
@@ -342,6 +393,19 @@ footer{
   width: calc(100% / 5);
 }
 
-.footer-menu .menu2 ul{
+.footer-menu .menu2 h4{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+  }
+
+.footer-menu .menu2 ul li{
+  padding-bottom: 10px;
+}
+
+.footer-menu .menu2 ul a{
+  color: white;
   list-style: none;
+  text-decoration: none;
+  font-size: 12px;
 }
