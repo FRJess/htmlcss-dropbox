@@ -561,7 +561,8 @@ section .container-2 .text{
 .faq ul li{
   padding: 25px 0;
   border-bottom: 1px solid #CDCDCD;
-  position: relative
+  position: relative;
+  font-weight: 600;
 }
 
 .faq ul :first-child{
@@ -572,6 +573,14 @@ section .container-2 .text{
   margin-left: 50px;
   position: absolute;
   right:50px
+}
+
+.faq ul li:hover .faq-hover {
+  display: block;
+}
+
+.faq ul li:hover .faq-hover{
+  display: none;
 }
 
 
@@ -598,7 +607,7 @@ footer{
 }
 
 .footer-menu .menu2 h4{
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
   color: white;
   }
@@ -610,5 +619,5 @@ footer{
 .footer-menu .menu2 ul a{
   color: white;
   list-style: none;
-  font-size: 12px;
+  font-size: 16px;
 }
