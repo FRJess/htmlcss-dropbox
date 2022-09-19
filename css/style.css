@@ -33,7 +33,6 @@ h4 {
 
 h6{
   font-size: 14px;
-
 }
 
 p{
@@ -92,11 +91,6 @@ ul{
   font-weight: 300;
 }
 
-.debug{
-  border: 1px solid black;
-  background-color: rgba(255, 0, 0, 0.2);
-}
-
 a{
   text-decoration: none;
 }
@@ -130,6 +124,7 @@ header .menu.left{
 }
 
 header .menu.right{
+  display: flex;
   align-items: baseline;
 }
 
@@ -155,9 +150,8 @@ header .menu ul li{
   background-color: #B4D0E7;
   display: inline-block;
   width: 100%;
-  /* max-width: 100%; */
   margin-bottom: 100px;
-  padding-bottom: 420px;
+  padding-bottom: 380px;
 }
 
 .title{
@@ -166,33 +160,37 @@ header .menu ul li{
   padding: 100px 400px 46px 300px;
 }
 
-.jumbotron .content{
+.jumbotron-content{
   display: flex;
   padding-left: 300px;
   position:absolute;
-  width: 100%;
 }
-
-.jumbotron .content .text{
-  width: 30%;
-  text-align: left;
+.jumbotron-content .content{
   float:left;
+  width: 30%;
+  min-width: 30%;
+  max-width: 30%;
 }
 
-.jumbotron .content .text p{
+.jumbotron-content .content .text{
+  text-align: left;
+}
+
+.jumbotron-content .content .text p{
   font-size: 1rem;
   margin-bottom: 20px;
 }
 
-.jumbotron .content .text button{
+.jumbotron-content .content .text button{
   margin-bottom: 20px;
 }
 
 .jumbotron .content .text i{
  font-size: 50px; 
+ margin-top: 70px;
 }
 
-.jumbotron .content .img{
+.jumbotron-content .img{
   width: 70%;
   margin-right: 300px;
   float:right;
@@ -200,7 +198,7 @@ header .menu ul li{
   left:0;
 }
 
-.jumbotron .content .img .proposta{
+.jumbotron-content .img .proposta{
   height: 465px;
   /* padding-bottom: 10px; */
 }
