@@ -149,7 +149,7 @@ header .menu ul li{
   width: 100%;
   /* max-width: 100%; */
   margin-bottom: 100px;
-  padding-bottom: 350px;
+  padding-bottom: 420px;
 }
 
 .title{
@@ -180,6 +180,10 @@ header .menu ul li{
   margin-bottom: 20px;
 }
 
+.jumbotron .content .text i{
+ font-size: 50px; 
+}
+
 .jumbotron .content .img{
   width: 70%;
   margin-right: 300px;
@@ -190,8 +194,7 @@ header .menu ul li{
 
 .jumbotron .content .img .proposta{
   height: 465px;
-  padding-bottom: 40px;
-
+  /* padding-bottom: 10px; */
 }
 
 /* CARDS */
