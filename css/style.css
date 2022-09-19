@@ -103,6 +103,11 @@ a{
 a:hover{
   text-decoration: underline;
   }
+
+ a:visited{
+  text-decoration: none;
+  color: inherit;
+  }
   
 
 /* HEADER */
@@ -190,10 +195,12 @@ header .menu ul li{
   margin-bottom: 20px;
 }
 
-.jumbotron .content .text i{
+.jumbotron-content .content .text i{
  font-size: 50px; 
  margin-top: 70px;
+ text-decoration: none;
 }
+
 
 .jumbotron-content .img{
   width: 70%;
@@ -208,7 +215,7 @@ header .menu ul li{
   /* padding-bottom: 10px; */
 }
 
-/* CARDS */
+/* SCELTA ABBONAMENTI */
 
 .container{
   width: 60%;
@@ -336,7 +343,7 @@ input[type="radio"]{
   padding-top: 50px;
 }
 
-/* SECTION CARDS PART 2 */
+/* PARTNER */
 
 .container-2{
   width: 60%;
@@ -363,7 +370,7 @@ section .container-2 .text{
   max-width: 600px;
 }
 
-/* SECTION COLONNE */
+/* PRESENTAZIONE FEATURES */
 
 .row-3{
   margin: 0;
@@ -397,7 +404,7 @@ section .container-2 .text{
   padding: 10px 0;
 }
 
-/* CUSTOMERS */
+/* PAGE BOTTOM */
 
 .bottom{
   margin: 40px 0;
