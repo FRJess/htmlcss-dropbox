@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html{
+  Scroll-behavior: smooth;
+  Scroll-padding-top: 80px;
+}
+
 body{
   font-family: 'Khula', sans-serif;
 }
