@@ -124,8 +124,8 @@ header{
 
 header .menu{
   display: flex;
-  font-size: 1rem;
-  padding: 12px 15px;
+  font-size: 1.2rem;
+  padding: 12px 0;
 }
 
 header .menu.left{
@@ -201,9 +201,10 @@ header .menu ul li{
  text-decoration: none;
 }
 
-
 .jumbotron-content .img{
   width: 70%;
+  min-width: 70%;
+  max-width: 70%;
   margin-right: 300px;
   float:right;
   position: relative;
@@ -212,14 +213,12 @@ header .menu ul li{
 
 .jumbotron-content .img .proposta{
   height: 465px;
-  /* padding-bottom: 10px; */
 }
 
 /* SCELTA ABBONAMENTI */
 
 .container{
   width: 60%;
-  max-width: 1200px;
   display: inline-block;
   margin: 40px auto;
 }
@@ -237,18 +236,19 @@ header .menu ul li{
 input[type="radio"]{
   margin: 0 10px 0 10px;
 }
+
 .row{
-  margin: 0 auto;
-  font-size: 0.9rem;
+  margin: 0;
+  font-size: 1rem;
   display: flex;
   float: left;
-  max-width: 1000px;
 }
 
 .feature{
-  width: (100%/3);
-  max-width: calc(100%/3);
+  width: calc(100%/3);
+  min-width: 280px;
   justify-content: center;
+  display: inline-block;
   text-align: left;
   line-height: 30px;
   border: 1px solid black;
@@ -256,8 +256,7 @@ input[type="radio"]{
 }
 
 .feature-body{
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 0 30px;
 }
 
 .box1,.box2{
@@ -319,10 +318,9 @@ input[type="radio"]{
 
 .row-2{
   width: 100%;
-  /* min-width: 100%; */
-  font-size: 0.9rem;
+  min-width: 100%;
+  font-size: 1rem;
   display: flex;
-  max-width: 1000px;
 }
 
 .feature-2{
@@ -349,7 +347,7 @@ input[type="radio"]{
   width: 60%;
   display: flex;
   align-items: center;
-  margin: 40px auto;
+  margin: 100px auto;
 }
 
 section .container-2 .image{
@@ -365,7 +363,6 @@ section .container-2 .text{
   padding:50px
 }
 
-
 .container-2 img{
   max-width: 600px;
 }
@@ -377,7 +374,6 @@ section .container-2 .text{
   font-size: 0.9rem;
   display: flex;
   float: left;
-  /* max-width: 1000px; */
 }
 
 .col{
@@ -385,13 +381,13 @@ section .container-2 .text{
   width: calc(100% / 3);
 }
 
+.col.one, .col.two{
+  margin-right: 48px;
+}
+
 .card{
   display: inline-block;
   height: 500px;
-}
-
-.col.one, .col.two{
-  margin-right: 48px;
 }
 
 .card img{
@@ -422,14 +418,13 @@ section .container-2 .text{
 }
 
 .grid-gallery{
-  /* width: 100%; */
-  /* min-width: 100%; */
+  width: 100%;
   margin-top: 150px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat (2, 5vw);
-  grid-auto-columns: minmax(100px, auto);
-  grid-auto-rows: minmax(100px, auto)
+  /* grid-auto-columns: minmax(100px, auto);
+  grid-auto-rows: minmax(100px, auto) */
 }
 
 .grid-gallery .design{
@@ -656,7 +651,6 @@ footer{
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
-  border-bottom: 1px solid #323540;
 }
 
 .menu2{
@@ -678,3 +672,19 @@ footer{
   list-style: none;
   font-size: 16px;
 }
+
+footer .lang{
+  width: 60%;
+  margin: auto;
+  /* display: flex; */
+  color: #77767A;
+}
+
+footer .lang hr{
+  width: 130px;
+}
+
+footer .lang span{
+margin: 0 10px;
+}
+
