@@ -14,8 +14,8 @@ main{
   padding-top: 80px;
   text-align: center;
   background-color: white;
-  width: auto;
   position:relative;
+  width: 100%;
 }
 
 h1{
@@ -43,6 +43,12 @@ p{
   font-weight: 300;
 }
 
+hr{
+  border-bottom: 1px solid #DEDEE0;
+  width: 50px;
+  margin: 40px 0;
+}
+
 .clearfix::after{
   content: "";
   display: table;
@@ -52,14 +58,14 @@ p{
 .btn{
   background-color: white;
   color: black;
-  padding: 10px 15px;
+  padding: 12px 15px;
   font-size: .8rem;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
   border: 1px solid black;
-  height: 40px;
   width: fit-content;
+  align-items: baseline;
 }
 
 .btn.colored{
@@ -98,7 +104,7 @@ header{
   z-index: 999;
   position: fixed;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   height: 80px;
   width: 100%;
   justify-content: space-between;
@@ -106,32 +112,44 @@ header{
 
 header .menu{
   display: flex;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  padding: 12px 15px;
 }
 
 header .menu.left{
   display: flex;
+  align-items: baseline;
+}
+
+header .menu.right{
+  align-items: baseline;
 }
 
 header .menu ul{
   list-style: none;
   display: flex;
-  padding-top: 5px;
 }
 
 header .menu ul li{
   margin: 0 16px;
+  padding: 12px;
+  width: auto;
+ }
+
+ header .menu ul li:hover{
+  border-bottom: 3px solid black;
+  padding-bottom: 20px;
  }
 
 /* JUMBOTRON */
 
 .jumbotron{
   background-color: #B4D0E7;
-  height:605px; /*da togliere*/
   display: inline-block;
   width: 100%;
-  max-width: 100%;
-  margin-bottom: 140px;
+  /* max-width: 100%; */
+  margin-bottom: 100px;
+  padding-bottom: 350px;
 }
 
 .title{
@@ -208,6 +226,7 @@ input[type="radio"]{
 
 .feature{
   width: (100%/3);
+  max-width: calc(100%/3);
   justify-content: center;
   text-align: left;
   line-height: 30px;
@@ -262,8 +281,15 @@ input[type="radio"]{
   margin-right: 5px;
   }
 
+.enterprise::before{
+  font-family: 'Font Awesome\ 5 Free';
+  content:"\f1ad";
+  margin-right: 5px;
+  }
+
 .feature .btn{
-  margin: 20px 0;
+  margin: 20px auto;
+  display: grid;
 }
 
 .feature .fa-check{
@@ -272,6 +298,7 @@ input[type="radio"]{
 
 .row-2{
   width: 100%;
+  /* min-width: 100%; */
   font-size: 0.9rem;
   display: flex;
   max-width: 1000px;
@@ -319,7 +346,7 @@ section .container-2 .text{
 
 
 .container-2 img{
-  max-width: 500px;
+  max-width: 600px;
 }
 
 /* SECTION COLONNE */
@@ -400,7 +427,8 @@ section .container-2 .text{
 .card-marchio{
   width: calc(100%/2);
   display: inline-block;
-  height: 320px;
+  min-height: 320px;
+  min-width: 320px;
   position: relative;
   /* justify-content: center;
   vertical-align: center; */
@@ -411,9 +439,11 @@ section .container-2 .text{
   justify-content: center;
   background-color: #F5F5F5;
   width: 100%;
-  display: flex;
   align-items: stretch;
   position: relative;
+  display: block;
+  overflow: hidden;
+  text-align: left;
 }
 
 .card-marchio img{
@@ -438,7 +468,13 @@ section .container-2 .text{
   bottom: 0;
   text-align: left;
   padding: 0 40px;
+}
 
+.hr-bottom{
+  position: absolute;
+  top: 180px;
+  left: 50px;
+  width: 100px;
 }
 
 .card-marchio.design{
@@ -514,10 +550,17 @@ section .container-2 .text{
 .faq ul li{
   padding: 25px 0;
   border-bottom: 1px solid #CDCDCD;
+  position: relative
 }
 
 .faq ul :first-child{
   border-top: 1px solid #CDCDCD;
+}
+
+.faq ul li i{
+  margin-left: 50px;
+  position: absolute;
+  right:50px
 }
 
 
