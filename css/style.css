@@ -67,7 +67,7 @@ hr{
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid black;
+  border: 1px solid #E5E6E7;
   width: fit-content;
   align-items: baseline;
 }
@@ -251,7 +251,7 @@ input[type="radio"]{
   display: inline-block;
   text-align: left;
   line-height: 30px;
-  border: 1px solid black;
+  border: 1px solid #E5E6E7;
   margin-bottom: 40px;
 }
 
@@ -264,7 +264,7 @@ input[type="radio"]{
 }
 
 .feature .type,.feature-2 .type{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #E5E6E7;
   text-align: center;
   line-height: 36px;
   margin-bottom: 36px;
@@ -326,7 +326,7 @@ input[type="radio"]{
 .feature-2{
   text-align: left;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid #E5E6E7;
   padding-bottom: 30px;
 }
 
@@ -617,8 +617,9 @@ section .container-2 .text{
   font-weight: 600;
 }
 
-.faq ul :first-child{
+.faq .faq-main{
   border-top: 1px solid #CDCDCD;
+  padding-top: 25px;
 }
 
 .faq ul li i{
@@ -627,14 +628,13 @@ section .container-2 .text{
   right:50px
 }
 
-.faq ul li:hover .faq-hover {
-  display: block;
-}
-
-.faq ul li:hover .faq-hover{
+.faq ul li .faq-hover{
   display: none;
 }
 
+.faq ul li:hover .faq-main {
+  display: block;
+}
 
 /* FOOTER */
 
