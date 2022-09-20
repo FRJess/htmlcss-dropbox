@@ -47,10 +47,13 @@ p{
   font-weight: 300;
 }
 
-hr{
-  border-bottom: 1px solid #DEDEE0;
+.buynow::after{
+  content:"";
+  display: block;
+  margin: 20px 0;
   width: 50px;
-  margin: 40px 0;
+  height: 3px;
+  background-color: #D0D0D3;
 }
 
 .clearfix::after{
@@ -418,6 +421,7 @@ section .container-2 .text{
 }
 
 .grid-gallery {
+  padding-top: 120px;
   display: flex;
   position: relative;
 }
@@ -432,6 +436,8 @@ section .container-2 .text{
 .card-marchio {
   width: 50%;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-marchio:after {
@@ -441,7 +447,11 @@ section .container-2 .text{
 }
 
 .card-marchio:hover{
-  opacity: 0.4;
+  border: 20px solid rgba(255, 255, 255, 0.8);
+}
+
+.card-marchio.big:hover{
+  border: none;
 }
 
 .card-marchio img{
@@ -468,7 +478,15 @@ section .container-2 .text{
   position: absolute;
   top: 20%;
   left: 30%;
-  /* margin: 50px; */
+}
+
+.card-marchio.big .testimonial::before{
+  content:"";
+  display: block;
+  margin-bottom: 50px;
+  width: 110px;
+  height: 3px;
+  background-color: #D0D0D3;
 }
 
 .card-marchio.big .testimonial{
@@ -476,7 +494,7 @@ section .container-2 .text{
   bottom: 0;
   text-align: left;
   padding: 0 40px;
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 .card-marchio.design{
@@ -519,7 +537,7 @@ section .container-2 .text{
   width: 60%;
   margin: auto;
   display: flex;
-  padding: 125px 0;
+  padding: 100px 0;
   justify-content: space-between;
 }
 
@@ -540,6 +558,7 @@ section .container-2 .text{
 
 .faq{
   width: 60%;
+  padding-top: 60px;
   margin: 40px auto;
   text-align: left;
 }
